@@ -1,0 +1,33 @@
+@import 'variables';
+@import 'mixins';
+@import 'App';
+@import 'SingleFaq';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", Tahoma, Helvetica, Arial, sans-serif;
+  background-color: $green;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.soft-green {
+  color: $soft-green;
+}
+
+

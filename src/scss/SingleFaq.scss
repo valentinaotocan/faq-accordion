@@ -1,0 +1,32 @@
+.faq__question {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  color: $desaturated-blue;
+  .heading {
+    @include text-style($fs-normal, $fw-normal, 1.24);
+    &:hover {
+      color: $soft-green;
+    }
+  }
+  .active {
+    font-weight: $fw-bold;
+    padding-bottom: 11px;
+  }
+  p {
+    @include text-style($fs-xs, $fw-normal, 1.5);
+  }
+
+  @media (max-width: 768px) {
+    .heading {
+      font-size: $fs-xs;
+    }
+  }
+}
+
+.divider {
+  margin: 15px 0;
+  background-color: $desaturated-blue;
+  width: 100%;
+  height: 1px;
+}

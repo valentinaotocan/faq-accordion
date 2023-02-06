@@ -1,0 +1,17 @@
+.card {
+  display: flex;
+  background: $grey;
+  width: 920px;
+  height: 500px;
+  &__text {
+    @include flex-w-style;
+    padding: 0 50px;
+    h1 {
+      @include text-style($fs-big, $fw-bold, 1.24);
+      padding-bottom: 43px;
+    }
+  }
+  &__image {
+    @include flex-w-style;
+  }
+}
