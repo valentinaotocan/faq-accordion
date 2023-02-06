@@ -13,15 +13,16 @@
     font-weight: $fw-bold;
     padding-bottom: 11px;
   }
-  p {
-    @include text-style($fs-xs, $fw-normal, 1.5);
-  }
-
+  
   @media (max-width: 768px) {
     .heading {
       font-size: $fs-xs;
     }
   }
+}
+
+p {
+  @include text-style($fs-xs, $fw-normal, 1.5);
 }
 
 .divider {
