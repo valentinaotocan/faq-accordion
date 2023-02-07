@@ -1,7 +1,7 @@
-@import 'variables';
-@import 'mixins';
-@import 'App';
-@import 'SingleFaq';
+@import "variables";
+@import "mixins";
+@import "App";
+@import "SingleFaq";
 
 * {
   margin: 0;
@@ -12,22 +12,27 @@
 body {
   font-family: "Kumbh Sans", Tahoma, Helvetica, Arial, sans-serif;
   background-color: $green;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 30px;
+  @media (max-width: 768px) {
+    height: 100%;
+  }
 }
 
 img {
   max-width: 100%;
   height: auto;
   display: inline-block;
+  @media (max-width: 768px) {
+    max-height: 200px;
+  }
 }
 
 .soft-green {
   color: $soft-green;
 }
-
-

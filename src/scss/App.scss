@@ -4,14 +4,53 @@
   width: 920px;
   height: 500px;
   &__text {
-    @include flex-w-style;
-    padding: 0 50px;
+    @include flex-pt-style;
+    padding-left: 50px;
+    padding-right: 70px;
     h1 {
       @include text-style($fs-big, $fw-bold, 1.24);
       padding-bottom: 43px;
     }
   }
   &__image {
-    @include flex-w-style;
+    @include flex-pt-style;
+  }
+  @media (max-width: 1024px) {
+    width: 700px;
+    &__text {
+      padding-left: 40px;
+      padding-right: 30px;
+      h1 {
+        padding-bottom: 25px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    width: 350px;
+    height: 650px;
+    &__text {
+      flex: 2;
+      padding-top: 50px;
+      padding-left: 30px;
+    }
+    &__image {
+      flex: 1;
+      height: 200px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  @media (max-width: 425px) {
+    &__text {
+      padding: 10px 24px 5px 24px;
+    }
+    &__image {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+  @media (max-width: 375px) {
+    width: 100%;
   }
 }

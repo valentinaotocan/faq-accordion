@@ -4,9 +4,15 @@
   line-height: $line-height;
 }
 
-@mixin flex-w-style {
+@mixin flex-pt-style {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 50%;
+  flex: 1;
+  padding-top: 70px;
+  @media(max-width: 1024px) {
+    padding-top: 90px
+  }
+  @media(max-width: 768px) {
+    padding-top: 0;
+  }
 }
